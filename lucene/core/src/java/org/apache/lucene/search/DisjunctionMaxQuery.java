@@ -181,8 +181,7 @@ public final class DisjunctionMaxQuery extends Query implements Iterable<Query> 
             }
 
             return new Weight.DefaultBulkScorer(
-                new DisjunctionMaxScorer(tieBreakerMultiplier, scorers, scoreMode, Long.MAX_VALUE)
-            );
+                new DisjunctionMaxScorer(tieBreakerMultiplier, scorers, scoreMode, Long.MAX_VALUE));
           }
 
           @Override
