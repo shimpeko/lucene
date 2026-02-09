@@ -35,6 +35,9 @@ public final class Lucene90BlockTreeTermsReader extends FieldsProducer {
 
   private final org.apache.lucene.codecs.lucene90.blocktree.Lucene90BlockTreeTermsReader delegate;
 
+  /**
+   * Create a compatibility reader that delegates to the core Lucene 9.0 block tree implementation.
+   */
   public Lucene90BlockTreeTermsReader(PostingsReaderBase postingsReader, SegmentReadState state)
       throws IOException {
     this.delegate =
